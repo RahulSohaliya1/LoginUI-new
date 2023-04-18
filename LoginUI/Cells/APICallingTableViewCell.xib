@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="300" id="KGk-i7-Jjw" customClass="APICallingTableViewCell" customModule="LoginUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="192"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNI-Hb-aPP">
+                        <rect key="frame" x="30" y="30" width="388" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6pd-d7-syL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCo-Mu-FAi">
+                        <rect key="frame" x="30" y="130" width="388" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arc-rv-cai">
+                        <rect key="frame" x="30" y="80" width="388" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="IQS-dH-eRY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jCo-Mu-FAi" firstAttribute="top" secondItem="Arc-rv-cai" secondAttribute="bottom" constant="30" id="CgG-aH-AdP"/>
+                    <constraint firstAttribute="trailing" secondItem="Arc-rv-cai" secondAttribute="trailing" constant="30" id="ErL-sS-OzJ"/>
+                    <constraint firstAttribute="trailing" secondItem="SNI-Hb-aPP" secondAttribute="trailing" constant="30" id="TGE-02-skb"/>
+                    <constraint firstAttribute="trailing" secondItem="jCo-Mu-FAi" secondAttribute="trailing" constant="30" id="TdJ-Mi-dGK"/>
+                    <constraint firstAttribute="bottom" secondItem="jCo-Mu-FAi" secondAttribute="bottom" constant="42" id="V5q-6p-dYH"/>
+                    <constraint firstItem="Arc-rv-cai" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="YME-8a-NaG"/>
+                    <constraint firstItem="jCo-Mu-FAi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="g7a-5p-zdC"/>
+                    <constraint firstItem="SNI-Hb-aPP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="kLA-yP-04z"/>
+                    <constraint firstItem="SNI-Hb-aPP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="qEG-8q-U7S"/>
+                    <constraint firstItem="Arc-rv-cai" firstAttribute="top" secondItem="SNI-Hb-aPP" secondAttribute="bottom" constant="30" id="zbl-uS-p7i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailLabel" destination="Arc-rv-cai" id="uNU-ij-LSJ"/>
+                <outlet property="genderLabel" destination="jCo-Mu-FAi" id="V9S-at-9ub"/>
+                <outlet property="nameLabel" destination="SNI-Hb-aPP" id="GPM-ht-YqX"/>
+            </connections>
+            <point key="canvasLocation" x="221.37404580152671" y="40.845070422535215"/>
+        </tableViewCell>
+    </objects>
+</document>
